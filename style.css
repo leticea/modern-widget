@@ -39,3 +39,30 @@ h2 {
   font-size: 18px;
   font-weight: 400;
 }
+
+.content {
+  position: relative;
+  overflow: hidden;
+  height: 140px;
+}
+
+.content-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  width: calc(var(--tab-width) * 3);
+  transition: 0.3s;
+}
+
+.content-inner > div {
+  width: inherit;
+  padding: 20px;
+}
+
+label {
+  padding: 20px;
+  font-size: 15px;
+}
+
