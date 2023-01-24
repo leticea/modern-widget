@@ -64,5 +64,45 @@ h2 {
 label {
   padding: 20px;
   font-size: 15px;
+  width: var(--button-width);
+  opacity: 0.35;
+  cursor: pointer;
 }
+
+p {
+  margin: 0;
+  font-size: 15px;
+  color: #888889;
+}
+
+.buttons {
+  position: relative;
+  display: flex;
+  border-bottom: 1px solid #575757;
+}
+
+.underline {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 64px;
+  height: 3px;
+  background: var(--color-primary);
+  transition: 0.2s;
+}
+
+.tabs input:nth-child(1):checked ~ .buttons .underline {
+  translate: 0 0;
+}
+
+.tabs input:nth-child(2):checked ~ .buttons .underline {
+  translate: var(--button-width) 0;
+}
+
+.tabs input:nth-child(3):checked ~ .buttons .underline {
+  translate: calc(var(--button-width) * 2) 0;
+}
+
+
+
 
