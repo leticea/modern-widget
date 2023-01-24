@@ -1,1 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@600&family=Ubuntu:wght@300;400;500&display=swap");
+
+:root {
+  --color-primary: #1976D2;
+  --tab-width: 300px;
+  --button-width: 64px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, .wrapper {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  margin: 0;
+  font-family: 'Ubuntu';
+  line-height: 1.5;
+  background: #24262a;
+  color: #f9f9f9;
+}
+
+.widget {
+  background: #17181a;
+  width: var(--tab-width);
+  border-radius: 8px;
+}
+
+input {
+  display: none;
+}
+
+h2 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  font-weight: 400;
+}
